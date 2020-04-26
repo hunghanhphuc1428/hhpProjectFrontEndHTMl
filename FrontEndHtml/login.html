@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+	<style>
+		.dangky {
+			width: 100%;
+			height: 53px;
+		}
+		a:link{
+			color:white;
+		}
+		.Register {
+			width: 30%;
+			height: 100%;
+			float: left;
+			transition:1.5s ease;
+			margin-top: 15px;
+			border-radius: 100px;
+		}
+			.Register:hover {
+				background: #03a9f4;
+				border-bottom: 1px solid blue;
+			}
+		.Return {
+			width: 70%;
+			height: 100%;
+			float: left;
+			padding: 0;
+			position:relative;
+		
+		}
+			.Return span {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		.Register h1 {
+			line-height: 4px;
+			text-align: center;
+		}
+		#myVideo {
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			min-width: 100%;
+			min-height: 100%;
+			z-index:0;
+		}
+		a:visited {
+			color: white;
+		}
+
+	</style>
+</head>
+<body>
+	<video autoplay muted loop id="myVideo">
+		<source src="image/signup.mp4" type="video/mp4">
+	</video>
+	<div id="container" style="position: relative;">
+		<form action="bac.php" method="post" style="width:435px; margin:10px auto;   background: rgba(0, 0, 0, 0.5); height: 693px; border-radius: 100px;padding:5px;    padding-left: 30px;    padding-right: 29px;">
+			<h1 style="text-align:center;color:white">Sign up</h1>
+			<span style="font-size: 25px;font-weight: bold;color:white">Your basic info</span>
+			<br />
+			<span style="color:white;    font-size: 24px;">Name:</span>
+			<br />
+			<input style="    width: 99%;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;margin-bottom:20px;margin-top:20px" type="text" name="username" placeholder="Input your name" /> <br />
+			<span style="color:white;    font-size: 24px;">Email:</span>
+			<br />
+			<input style="width: 99%;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;margin-bottom:20px;margin-top:20px" type="text" name="email" placeholder="Input your email" /> <br />
+			<span style="color:white;    font-size: 24px;">Password:</span>
+			<br />
+			<input style="width: 99%;padding-top: 5px;padding-bottom: 5px;padding-left: 5px;margin-bottom:20px;margin-top:20px" type="password" name="password" placeholder="Input your password" /> <br />
+			<br />
+			<span style="color:white;    font-size: 24px;">Age:</span>
+			<br />
+			<input type="radio" value="Under13" name="age" /><span style="color:white">Under 13 Old </span><br />
+			<input type="radio" value="Over13" name="age" /><span style="color:white">13 or Older </span><br />
+			<input type="checkbox" /><span style="color:white"> SUBSCRIBE TO OUR NEWSLETTER?</span>
+			<div class="dangky">
+				<div class="Register"><a href="headphone.html"><h1>Register</h1></a></div>
+				<div class="Return"><span style="color:white">Returning Customer? <a href="signin.html">Login →</a> </span></div>
+			</div>
+
+
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,624 @@
+﻿@font-face {
+    font-family: RalewayB;
+    src: url('font/Raleway-Bold.ttf');
+}
+
+@font-face {
+    font-family: RalewayL;
+    src: url('font/Raleway-Light.ttf');
+}
+
+@font-face {
+    font-family: LatoB;
+    src: url('font/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: LatoL;
+    src: url('font/Lato-Light.ttf');
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.first {
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+#bg{
+    position: absolute;
+    z-index: -1;
+}
+.logo {
+    border-right: 0.2px solid #989489;
+    float: left;
+    padding-left: 26px;
+    padding-right: 26px;
+}
+
+#dark{
+    width: 90px;
+    height: 76px;
+    position: absolute;
+    left: 40px;
+    top: -5px;
+    border-right: 1px solid #989489;
+    padding-right: 40px;  
+    padding-top : 0; 
+    display: none;
+}
+
+.header {
+    border-bottom: 0.1px solid #989489;
+    width: 100%;
+    height: 105px;
+    position: fixed;
+    top: 0px;
+    color: white;
+    font-size: 15px;
+    transition: 0.1s;
+    z-index: 20;
+}
+
+.header a {
+    float: right;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-family: RalewayB;
+}
+.header a:hover {
+    color: #1ABC9C;
+}
+#blue{
+    margin-top: -25px;
+    padding: 60px 30px;
+}
+
+#blue:hover + .menu{
+    display: block;
+}
+.menu{
+    position: absolute;
+    top:105px;
+    right:455px;
+    background-color: rgb(54, 52, 52);
+    box-sizing: border-box;
+    padding: 0;
+    height: 510px;
+    border-top: 1px solid #1ABC9C;
+    display: none;
+    width: 200px;  
+}
+.menu > ul{
+    list-style: none;
+    padding: 0;
+    color: #777777;
+    margin-top:0px; 
+}
+.menu > ul > li {
+    border: 1px solid unset;
+    font-family: LatoL;
+    font-size: 16px;
+    padding: 10px;
+    
+}
+.menu:hover {
+    display: block;
+    opacity: 1;
+}
+.menu > ul > li:hover{
+    margin-left: 3px;
+}
+.content {
+    color: white;
+    position: relative;
+    left: 170px;
+    top: 100px;
+    margin-top: 150px;
+    transition: 2s;
+    opacity: 0;
+}
+
+.content p {
+    font-family: RalewayL;
+}
+
+.content h1 {
+    font-family: RalewayB;
+    font-size: 52px;
+    margin: 0px;
+}
+
+.button {
+    border: 2px solid white;
+    width: 150px;
+    height: 42px;
+    padding-top: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 10px;
+    margin-top: 50px;
+    font-family: RalewayL;
+}
+
+.button:hover {
+    background-color: white;
+    color: black
+}
+.container{
+    position: relative;
+    transition: 2s;
+    
+}
+.container img {
+    position: absolute;
+    transform: translate(570px,-1000px);
+    transition: 1s;
+}
+/*hình rung rinh*/
+.container #s8:hover{width: 445px;height: 225px;}
+.container #s7:hover{width: 486px;height: 263px;}
+.container #s6:hover{width: 437px;height: 237px;}
+.container #s5:hover{width: 493px;height: 261px;}
+.container #s4:hover{width: 482px;height: 261px;}
+.container #s3:hover{width: 464px;height: 235px;}
+.container #s2:hover{width: 496px;height: 274px;}
+.container #s1:hover{width: 419px;height: 267px;}
+
+.second{
+    background-color: white;
+    padding-top: 50px; 
+    padding-right: 100px;
+    padding-left: 100px; 
+    height: 900px;
+    transition: 0.5s;
+    position: relative;
+    z-index: 2;
+}
+.ds1{
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-family: RalewayB;
+    color:#444444;
+    padding-bottom: 60px;
+}
+#butb{
+    background-color: #343434;
+    color: white;
+    font-size: 16px;
+    font-family: LatoB;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#butb:hover{
+    background-color: #31C3A6;
+}
+#butg{
+    background-color: rgb(37, 175, 148);
+    color: white;
+    font-size: 16px;
+    font-family: LatoB;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+#butg:hover{
+    background-color: #31C3A6;
+}
+
+.s1 {
+    font-family: RalewayL;
+    float: left;
+    width: 360px;
+    padding-left: 20px;
+    padding-top: 40px;
+    opacity: 0;
+}
+/*độ trể*/
+#d1 {transition: 1.5s;}
+#d2 {transition: 1.5s;}
+#d3 {transition: 1.5s;}
+#d4 {transition: 1.5s;}
+#d5 {transition: 1.5s;}
+#d6 {transition: 1.5s;}
+#d7 {transition: 1.5s;}
+#d8 {transition: 1.5s;}
+#d9 {transition: 1.5s;}
+
+
+
+/*.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    padding: 0px 0px 0px 10px;
+    text-align: left;
+    transition: 0.5s;
+}
+
+.overlay>p {
+    font-family: RalewayL;
+    font-size: 18px;
+}*/
+
+
+.six{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    background-color: #444444;
+    color: white;
+    padding-top: 15px;
+    transition: 1s;
+    display: inline-block;
+    margin-top: -4px;
+    position: relative;
+    z-index: 3;
+}
+.six:hover {
+    background-color: #1abc9c;
+}
+.button1 {
+    border: 2px solid #444444;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    right: 350px;
+    text-align: center;
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    font-family: LatoL;
+    padding-top: 13px;
+    margin-top: 50px;
+    color: #444444;
+    transition: 0.5s;
+}
+
+.button1:hover {
+    background-color: #444444;
+    color: white;
+}
+
+.seven{
+    padding-top: 0px;
+    padding-left: 240px;
+    padding-right: 100px;
+}
+.fd1 {
+    width: 250px;
+    text-align: center;
+    float: left;
+    
+}
+
+.fd1>span {
+    font-size: 42px;
+    font-family: RalewayB;
+    color: #777777;
+}
+
+.fd1>hr {
+    width: 50px;
+}
+
+.fd1>h5 {
+    font-size: 14px;
+}
+
+.eight{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    padding-top: 250px;
+    position:absolute;
+    padding-bottom: 100px;
+    
+}
+.eight > hr{
+    width: 50px;
+}
+.eight > h2 {
+    font-family: RalewayB;
+    font-size: 30px;
+}
+.eight > p {
+    font-family: LatoL;
+    font-size: 22px;
+    color: #868686;
+}
+.eightimg > img{
+    left: 100px;
+    position: absolute;
+    display: inline;
+}
+
+.nine {
+    width: 100%;
+    height: 500px;
+    background-color: #868686;
+    overflow: hidden;
+    position: relative;
+    bottom: -840px;
+}
+
+.ninep {
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.ninep>h2 {
+    font-family: RalewayB;
+    font-size: 42px;
+}
+
+.ninep>p {
+    font-family: LatoL;
+    font-size: 24px;
+}
+
+.button2 {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    right: 600px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: LatoL;
+    padding-top: 13px;
+    margin-top: 50px;
+    color: white;
+    transition: 0.5s;
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.bubbles li {
+    position: absolute;
+    list-style: none; /*bỏ dấu đô=ầu dòng của list*/
+    display: block; /*hiện hình vuông*/
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+    animation: animateNine 25s linear infinite; /*tên thời gian và vòng lập*/
+    bottom: -100px;
+    transition: 5s;
+    overflow: hidden; /*cắt nửa đoạn dưới*/
+}
+
+.bubbles li:nth-child(1) {
+    left: 10%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0;
+}
+
+.bubbles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s; /*độ trễ*/
+    animation-duration: 8s; /*time hoàn thành*/
+}
+
+.bubbles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+    animation-duration: 8s;
+}
+
+.bubbles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 3s;
+
+}
+
+.bubbles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0;
+    animation-duration: 8s;
+}
+
+.bubbles li:nth-child(6) {
+    left: 75%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 7s;
+    animation-duration: 8s;
+}
+
+.bubbles li:nth-child(8) {
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 5s;
+}
+
+.bubbles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 7s;
+}
+
+.bubbles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0;
+}
+
+@keyframes animateNine {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1; /*mờ dần*/
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1050px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%; /*viền bị bo lại*/
+    }
+}
+
+
+
+.eleven{
+    width: 100%;
+    text-align: center;
+    background-color: #F9F9F9;
+    position: relative;
+    bottom: -820px;
+    padding-top: 50px; 
+}
+.eleven > h2{
+    font-family: RaleWayB;
+    font-size: 24px;
+}
+.eleven > hr{
+    width: 30px;
+
+}
+.eleven > input{
+    width: 400px;
+    height: 39px;
+    margin-top: 25px;
+    font-size: 24px;
+    font-family: LatoL;
+    border: 2px solid #888888;
+    transition: 1s;
+}
+.button4 {
+    border: 2px solid #888888;
+    background-color: #888888;
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: LatoL;
+    padding-top: 10px;
+    margin-top: 25px;
+    color: white;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.twelve{
+    width: 100%;
+    position: relative;
+    bottom: -820px;
+    overflow: hidden;
+}
+.slideshow{
+    width: 3330px;
+    transition: 1s;
+    animation: animateTwelve 10s linear infinite;
+    animation-direction: alternate;    
+}
+.slideshow > img {
+    width: 330px;
+    height: auto;
+}
+@keyframes animateTwelve {
+    0% {
+        transform: translateX(0) ;
+    }
+    100% {
+        transform: translateX(-1700px);
+    }
+}
+
+.thirdteen{
+    position: relative;
+    bottom: -820px;
+    text-align: center;
+    width: 100%;
+   
+}
+.thirdteen > h2{
+    font-family: RaleWayB;
+    font-size: 25px;
+}
+.thirdteen > hr{
+    width: 30px;
+}
+.thirdteen > h3{
+    font-family: RaleWayB;
+    font-size: 22px;
+}
+.thirdteen > p{
+    font-size: 20px;
+    font-family: LatoL;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    transition: 0.5s;
+    float: left;
+    padding: 5px;
+}
+#i1:hover{
+    background-color: #3B5998;
+}
+#i2:hover{
+    background-color: #DD4B39;
+}
+#i3:hover{
+    background-color: #00A9F0;
+}
+#i4:hover{
+    background-color: #86C9EF;
+}
+#i5:hover{
+    background-color: #00ACEE;
+}
+#i6:hover{
+    background-color: #171515;
+}
+.icon > i{
+    transition: 0.5s;
+    transform: translateY(7px);
+    
+}
+.icon:hover > i{
+    transform: translateY(-37px);
+}
+       

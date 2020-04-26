@@ -1,0 +1,731 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i"
+		  rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="stylea.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="hung.css" />
+	<style>
+	</style>
+	<script>
+		// When the user scrolls down 20px from the top of the document, slide down the navbar
+		window.onscroll = function () { scrollFunction20(); scrollFunction600(); scrollFunction2300(); };
+		// cuộn chuột xuống 20, menu thành màu trắng( thanh trên cùng)
+		function scrollFunction20() {
+			if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				document.getElementById("navbar").style.backgroundColor = "white";
+				document.getElementById("navbar").style.color = "black";
+				document.getElementById("navbar").style.height = "70px";
+				document.getElementById("navbar").style.fontSize = "13px";
+				document.getElementById("dark").style.display = "block"; //hiện lên
+				document.getElementById("white").style.display = "none";// ẩn
+				document.getElementById("yc").style.color = "black";
+				document.getElementById("tm").style.color = "black";
+				document.getElementById("home").style.color = "black";
+				document.getElementById("sale").style.color = "black";
+				document.getElementById("bl").style.color = "black";
+
+				
+
+			} else {
+				document.getElementById("navbar").style.backgroundColor = "unset";
+				document.getElementById("navbar").style.color = "white";
+				document.getElementById("navbar").style.height = "105px";
+				document.getElementById("navbar").style.fontSize = "15px";
+				
+				document.getElementById("dark").style.display = "none";
+				document.getElementById("white").style.display = "block";
+				
+				document.getElementById("yc").style.color = "white";
+				document.getElementById("tm").style.color = "white";
+				document.getElementById("home").style.color = "white";
+				document.getElementById("sale").style.color = "white";
+				document.getElementById("bl").style.color = "white";
+			}
+		}
+		// ở vị trí 600 hiện lên
+		function scrollFunction600() {
+			if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+				document.getElementById("d1").style.opacity = "1";
+				window.setTimeout(delayd2, 400);
+				window.setTimeout(delayd3, 500);
+				window.setTimeout(delayd4, 600);
+				window.setTimeout(delayd5, 700);
+				window.setTimeout(delayd6, 800);
+				window.setTimeout(delayd7, 900);
+				window.setTimeout(delayd8, 1000);
+				window.setTimeout(delayd9, 1100);
+
+
+			}
+		}
+	
+		// hiện các awesome
+		function delayimg() {
+			document.getElementById("img3").style.opacity = "1";
+		}
+
+		function delayd2() {
+			document.getElementById("d2").style.opacity = "1";
+		}
+		function delayd3() {
+			document.getElementById("d3").style.opacity = "1";
+		}
+		function delayd4() {
+			document.getElementById("d4").style.opacity = "1";
+		}
+		function delayd5() {
+			document.getElementById("d5").style.opacity = "1";
+		}
+		function delayd6() {
+			document.getElementById("d6").style.opacity = "1";
+		}
+		function delayd7() {
+			document.getElementById("d7").style.opacity = "1";
+		}
+		function delayd8() {
+			document.getElementById("d8").style.opacity = "1";
+		}
+		function delayd9() {
+			document.getElementById("d9").style.opacity = "1";
+		}
+
+
+		// refresh thì xuất hiện lại 30+
+		window.onload = function () { refreshFunction(); };
+		function refreshFunction() {
+			document.getElementById("pf").style.marginTop = "0px";
+			document.getElementById("pf").style.opacity = "1";
+		}
+		// check hình động, cho nó xổ xuống vị trí
+		function checkOut() {
+			document.getElementById("s1").style.transform = "translate(570px,0px)";
+			window.setTimeout(delays2, 200);
+			window.setTimeout(delays3, 400);
+			window.setTimeout(delays4, 600);
+			window.setTimeout(delays5, 800);
+			window.setTimeout(delays6, 1000);
+			window.setTimeout(delays7, 1200);
+			window.setTimeout(delays8, 1400);
+			window.setTimeout(delays9, 2500);
+
+		}
+		// thu giãn
+		function recheckOut() {
+			document.getElementById("s1").style.transform = "translate(570px,0px)";
+			document.getElementById("s2").style.transform = "translate(570px,0px)";
+			document.getElementById("s3").style.transform = "translate(570px,0px)";
+			document.getElementById("s4").style.transform = "translate(570px,0px)";
+			document.getElementById("s5").style.transform = "translate(570px,0px)";
+			document.getElementById("s6").style.transform = "translate(570px,0px)";
+			document.getElementById("s7").style.transform = "translate(570px,0px)";
+			document.getElementById("s8").style.transform = "translate(570px,0px)";
+		}
+
+		function delays2() {
+			document.getElementById("s2").style.transform = "translate(520px,0px)";
+		}
+		function delays3() {
+			document.getElementById("s3").style.transform = "translate(570px,0px)";
+		}
+		function delays4() {
+			document.getElementById("s4").style.transform = "translate(570px,0px)";// vị trí x, y
+		}
+		function delays5() {
+			document.getElementById("s5").style.transform = "translate(570px,0px)";
+		}
+		function delays6() {
+			document.getElementById("s6").style.transform = "translate(570px,0px)";
+		}
+		function delays7() {
+			document.getElementById("s7").style.transform = "translate(570px,0px)";
+		}
+		function delays8() {
+			document.getElementById("s8").style.transform = "translate(570px,0px)";
+		}
+
+		function delays9() {
+
+			document.getElementById("s2").style.transform = "translate(520px,180px)";
+
+
+			document.getElementById("s3").style.transform = "translate(280px,50px)";
+
+
+			document.getElementById("s4").style.transform = "translate(810px,150px)";
+
+
+			document.getElementById("s5").style.transform = "translate(170px,160px)";
+
+
+			document.getElementById("s6").style.transform = "translate(900px,0px)";
+
+
+			document.getElementById("s7").style.transform = "translate(600px,-150px)";
+
+
+			document.getElementById("s8").style.transform = "translate(900px,-150px)";
+
+		}
+
+		// chạy hàm đếm
+		//var flag = true
+		//function scrollFunction2300() {
+		//	if (flag == true && (document.body.scrollTop > 2300 || document.documentElement.scrollTop > 2300)) {
+		//		countto1200();
+		//		countto15360();
+		//		countto368();
+		//		countto840();
+		//		flag = false;
+
+		//	}
+		//}
+		// hàm đếm
+		//function countto840() {
+		//	var counter = document.getElementById("counter840");
+		//	var times = 0;
+		//	var id = setInterval(frame, 150);
+
+		//	function frame() {
+		//		if (times >= 840) {
+		//			clearInterval(id);
+		//		}
+		//		else {
+		//			times += 84;
+		//			counter.innerHTML = times;
+		//		}
+		//	}
+		//}
+
+		//function countto15360() {
+		//	var counter = document.getElementById("counter15360");
+		//	var times = 0;
+		//	var id = setInterval(frame, 150);
+
+		//	function frame() {
+		//		if (times >= 15360) {
+		//			clearInterval(id);
+		//		}
+		//		else {
+		//			times += 1536;
+		//			counter.innerHTML = times;
+		//		}
+		//	}
+		//}
+
+		//function countto368() {
+		//	var counter = document.getElementById("counter368");
+		//	var times = 0;
+		//	var id = setInterval(frame, 50);
+
+		//	function frame() {
+		//		if (times >= 368) {
+		//			clearInterval(id);
+		//		}
+		//		else {
+		//			times += 4;
+		//			counter.innerHTML = times;
+		//		}
+		//	}
+		//}
+
+		//function countto1200() {
+		//	var counter = document.getElementById("counter1200");
+		//	var times = 0;
+		//	var id = setInterval(frame, 50);
+
+		//	function frame() {
+		//		if (times >= 1200) {
+		//			clearInterval(id);
+		//		}
+		//		else {
+		//			times += 24;
+		//			counter.innerHTML = times;
+		//		}
+		//	}
+		//}
+		
+		// check email
+		function check() {
+			var email = document.getElementById("Email");
+
+			var as = /^[a-zA-Z0-9]+[@][a-zA-Z]+([.][a-zA-Z]+){1,2}$/
+			if (as.test(email.value) == false) {
+				email.style.border = "2px solid red";
+			}
+			else {
+				email.style.border = "2px solid green";
+			}
+		}
+		
+	</script>
+    
+</head>
+
+<body> 
+	<div id="navbar" class="header">
+		<div class="logo"><img src="logo.png" id="white" width="200" height="100"><img src="logo1.png" id="dark" width="200" height="100"></div>
+        <a href="signin.html" id="yc" style="float: right;font-family: RalewayB; padding-top: 40px; padding-right: 30px;color:white">YOUR CARD</a>
+        <a href="Blog.html" id="bl" style="float: right;font-family: RalewayB; padding-top: 40px; padding-right: 30px;color:white">BLOG</a>
+
+        <a href="Trademark.html" id="tm" style="float: right;font-family: RalewayB; padding-top: 40px; padding-right: 30px;color:white">TRADEMARK</a>
+        <a href="sale.html" id="sale" style="float: right;font-family: RalewayB; padding-top: 40px; padding-right: 30px;color:white">SALE</a>
+
+        <a href="Headphone.html" id="home" style="float: right;font-family: RalewayB; padding-top: 40px; padding-right: 30px;color:white">HOME</a>
+
+	</div>
+	<div class="first">
+
+       
+
+                <img src="2923e9bfc5a327fd7eb2.jpg" width="100%" height="750px" id="bg">
+
+           
+		<div class="content" id="pf">
+			<p>Speaking of Customization?</p>
+			<h1>30+ HOMEPAGES</h1>
+			<p style="font-size: 18px;">
+				After silence, that which comes nearest to expressing the inexpressible is music.
+
+			</p>
+			<div class="button" onclick="checkOut()" ondblclick="recheckOut()">
+				CHECK NOW &nbsp; >
+			</div>
+		</div>
+		<div class="container" id="imgf">
+			<img src="s2-1.png" id="s1">
+			<img src="s2-2.png" id="s2">
+			<img src="s2-3.png" id="s3">
+			<img src="s2-4.png" id="s4">
+			<img src="s2-5.png" id="s5">
+			<img src="s2-6.png" id="s6">
+			<img src="s2-7.png" id="s7">
+			<img src="s2-8.png" id="s8">
+		</div>
+
+	</div>
+	<div class="second" >
+		<div class="ds1">
+			<img src="onlinelogomaker-030119-1106-4331.png" width="200px" height="100px">
+			<p>Welcome! This is <span style="color:#1CBD9D">Headphones</span>.</p>
+			<p>The listening experience is private, convenient, does not affect others and the sound does not interfere with the surrounding space.</p>
+
+			<a><button id="butb">BROWSE FEATURES </button></a>
+			<a><button id="butg">BUY NOW </button></a>
+		</div>
+
+		<div class="s1" id="d1">
+			<a href="#"><i class="fa fa-mobile-phone" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>RESPONSIVE LAYOUT</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Powerful Layout with Responsive functionality that can <br> be
+				adapted to any screen size.
+			</p>
+		</div>
+		<div class="s1" id="d2">
+			<a href="#"><i class="fa fa-eye" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>RETINA READY GRAPHICS</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Looks beautiful & ultra-sharp on Retina Displays with Retina
+				Icons, Fonts & Images.
+			</p>
+		</div>
+		<div class="s1" id="d3">
+			<a href="#"><i class="fa fa-star-o" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>POWERFUL PERFORMANCE</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Optimized code that are completely customizable and deliver
+				unmatched fast performance.
+			</p>
+		</div>
+		<div class="s1" id="d4">
+			<a href="#"><i class="fa fa-video-camera" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>HTML5 VIDEO</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Canvas provides support for Native HTML5 Videos that can be added
+				to a Full Width Background.
+			</p>
+		</div>
+		<div class="s1" id="d5">
+			<a href="#"><i class="fa fa-server" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>PARALLAX SUPPORT</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Display your Content attractively using Parallax Sections that
+				have unlimited customizable areas.
+			</p>
+		</div>
+		<div class="s1" id="d6">
+			<a href="#"><i class="fa fa-heartbeat" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>ENDLESS POSSIBILITIES</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Complete control on each & every element that provides endless
+				customization possibilities.
+			</p>
+		</div>
+		<div class="s1" id="d7">
+			<a href="#"><i class=" fa fa-bullhorn" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>LIGHT & DARK COLOR SCHEMES</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Change your Website's Primary Scheme instantly by simply adding
+				the dark class to the body.
+			</p>
+		</div>
+		<div class="s1" id="d8">
+			<a href="#"><i class=" fa fa-cubes" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>BOXED & WIDE LAYOUTS</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				Stretch your Website to the Full Width or make it boxed to
+				surprise your visitors.
+			</p>
+		</div>
+		<div class="s1" id="d9">
+			<a href="#"><i class=" fa fa-file-text-o" style="font-size:40px;color:#31C3A6;float: left;padding-right: 13px;"></i></a>
+			<h3 style="font-size:15px"><b>EXTENSIVE DOCUMENTATION</b></h3>
+			<p style="font-size:14px;color: #B6B6B6">
+				We have covered each & everything in our Documentation including
+				Videos & Screenshots.
+			</p>
+		</div>
+	</div>
+
+	<div class="six">
+		<p>
+			We have more than 100+ predefined Portfolio Grid Layouts. <strong style="text-decoration:underline ">
+				See
+				More
+			</strong><i class="fa fa-caret-right" style="top:4px;"></i>
+		</p>
+	</div>
+
+
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+	<div class="noidung">
+		<div class="loaisanpham">
+			<div class="SP">
+				<div class="bannerSP1">
+					<span class="textbanner">BLUETOOTH WIRELESS HEADPHONES</span> <br />
+					<span class="textbanner2">FREEDOM OF WIRELESS</span>
+				</div>
+				<img src="image/pic1.jpg" />
+
+				<div class="overplay">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/headphones/bluetooth">	<div class="textSP1">SHOP NOW</div></a>
+				</div>
+			</div>
+			<div class="SP">
+				<div class="bannerSP1">
+					<span class="textbanner">KILBURN II</span> <br />
+					<span class="textbanner2">THE STOUT-HEARTED HERO</span>
+				</div>
+				<img src="image/pic2.jpg" />
+				<div class="overplay">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/kilburn-ii">	<div class="textSP1">SHOP NOW</div></a>
+				</div>
+			</div>
+			<div class="SP">
+				<div class="bannerSP1">
+					<span class="textbanner">BACKSTAGE</span> <br />
+				 <span class="textbanner2">LIFE IN STEREO WITH THERESA WAYMAN & YUKI TSUJII</span>
+				</div>
+				<img src="image/pic3.jpg" />
+				<div class="overplay">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/backstage/ezra-collective">	<div class="textSP1">READ MORE</div></a>
+				</div>
+			</div>
+
+
+		</div>
+
+		<!-- Phan2 --------------------------------------------------->
+		<div class="loaisanpham2">
+			<div class="tieude">
+				<h2>
+					MOST POPULAR ITEMS
+				</h2>
+			</div>
+
+			<ul class="listSP2">
+				<li class="SP2">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/mid-anc">
+						<img class="imageSP2" src="image/h1.png" />
+						<div class="contentSP2">
+							<h3>MID A.N.C. </h3>
+							<span>$ 239.99</span>
+
+						</div>
+					</a>
+				</li>
+				<li class="SP2">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/major-iii-bluetooth">
+						<img class="imageSP2" src="image/h2.png" />
+						<div class="contentSP2">
+							<h3>MAJOR III BLUETOOTH </h3>
+							<span>$ 129.99</span>
+
+						</div>
+					</a>
+				</li>
+				<li class="SP2">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/acton-ii-bluetooth">
+						<img class="imageSP2" src="image/h3.png" />
+						<div class="contentSP2">
+							<h3>ACTION II BLUETOOTH </h3>
+							<span>$ 219.99</span>
+
+						</div>
+					</a>
+				</li>
+				<li class="SP2">
+					<a href="https://www.marshallheadphones.com/mh_uk_en/stanmore-ii-bluetooth">
+						<img class="imageSP2" src="image/h4.png" />
+						<div class="contentSP2">
+							<h3>STANMORE II BLUETOOTH. </h3>
+							<span>$ 299.99</span>
+
+						</div>
+					</a>
+				</li>
+
+			</ul>
+
+
+
+
+		</div>
+		<!-- Phan3 -->
+		<div class="loaisanpham3">
+			<div class="tieude1">
+				<h2>
+					MOST POPULAR ITEMS
+				</h2>
+			</div>
+
+
+			<div class="boxSP3">
+				<a href="https://www.marshallheadphones.com/mh_uk_en/minor-ii-bluetooth">
+					<div>
+						<div class="SP3-1">
+							<img class="imageSP3" src="image/SP3-1.jpg" />
+						</div>
+						<div class="bg3"></div>
+					</div>
+				</a>
+				<a href="https://www.marshallheadphones.com/mh_uk_en/mid-anc">
+					<div class="SP3-2">
+						<img class="imageSP3" src="image/SP3-2.jpg" />
+					</div>
+					<div class="bg3"></div>
+				</a>
+				<a href="https://www.marshallheadphones.com/mh_uk_en/headphones/bluetooth" >
+					<div class="SP3-3">
+
+						<img class="imageSP3" src="image/SP3-3.jpg" />
+					</div>
+					<div class="bg3"></div>
+				</a>
+				<a href="https://www.marshallheadphones.com/mh_uk_en/major-iii">
+					<div class="SP3-4">
+						<img class="imageSP3" src="image/SP3-4.jpg" />
+
+					</div>
+					<div class="bg3"></div>
+				</a>
+			</div>
+
+
+
+
+		</div>
+		<!-- Phan4 -->
+		<div class="loaisanpham4">
+			<div class="SP4-1">
+				<img class="imageSP4" src="image/SP4-1.jpg" />
+			</div>
+			<div class="textSP4">
+				<div class="boxSP4"><h2>Beyerdynamic DT 1770 Pro</h2></div>
+				<div class="boxSP4-1">
+					<p style="    color: #5e6060;">Beyerdynamic's DT 1770 Pros are everything a pair of entry-level audiophile headphones should be. The width of that sound stage, particularly for a pair of closed-back headphones, is exceptional. They're a little bulky, but don't let that put you off.</p>
+				</div>
+				<div class="boxSP4-2">
+					<div class="iconfor">
+						<img src="image/icon1.png" />
+					</div>
+					<span>Beautifully crafted soundscape</span> <br> <br />
+					<span>Sleek design</span> <br><br />
+					<span>Good price for the quality</span> <br><br />
+					<span>Work with portable players</span> <br><br />
+
+				</div>
+				<div class="boxSP4-3">
+					<div class="iconfor">
+						<img src="image/icon2.png" />
+					</div>
+					<span>They're a bit bulky</span>
+				</div>
+			</div>
+		</div>
+		<!-- phan5 -->
+		<div class="loaisanpham5">
+			<div class="fullscreen-video-wrap">
+				<video autoplay muted loop id="myVideo">
+					<source src="image/SP5-1.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="header-overplay">
+
+
+			</div>
+			<div class="content-v">
+				<h1>
+					TESLA TECHNOLOGY
+				</h1>
+				<div class="content-vp">
+					<p>The transduecers are the driving force behind every set of headphones. Power and precision are critical requirements when it comes to sound reproduction. Tesla systems function using an impressively efficient operating mode and enable precise and distortion-free sound to be achieved even at high output levels. A three-layer compound membrane is used to suppress break-up vibrations. Carefully selected acoustic fabric ensures distortion-free sound reproduction.</p>
+
+				</div>
+
+
+			</div>
+
+		</div>
+		<!-- phan6 -->
+
+		<div class="body6">
+
+		
+			<div class="parallax"></div>
+
+			<div style="height:100px;font-size:18px">
+				<h1>
+					About Music for Life
+				</h1>
+				<p style="color: #5e6060;">
+					Music for Life aims to enhance the quality of life of its participants and to demonstrate to carers the emotional, social and physical potential of people in their care.
+
+					Projects take place in residential homes and special day care centres, and focus on people who can be isolated and disempowered as a result of the advanced stage of their dementia.
+
+					During projects, specially trained musicians work alongside small groups of people with dementia and their carers, drawing out individuals and enhancing communication. These musical and personal interactions identify and build upon areas still intact in a person suffering the losses associated with the later stages of Alzheimer’s and other forms of dementia – memory, physical capacities, personality changes and accompanying loss of identity.
+				</p>
+
+
+			</div>
+
+		</div>
+	</div>
+	<div class="cuoicung">
+		<section>
+			<div class="fullscreen-video-wrap">
+				<video autoplay muted loop id="myVideo">
+					<source src="image/smoke.mp4" type="video/mp4">
+				</video>
+			</div>
+			<h1>
+				<span>H</span>
+				<span>E</span>
+				<span>A</span>
+				<span>D</span>
+				<span>P</span>
+				<span>H</span>
+				<span>O</span>
+				<span>N</span>
+				<span>E</span>
+
+			</h1>
+		</section>
+
+
+	</div>
+
+	<!-- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -->
+   
+	<div class="nine">
+		<div class="ninep">
+			<h2>Beauty and quality</h2>
+			<p>
+				Looks beautiful & ultra-sharp on Retina Screen Displays. Powerful Layout with <br>Responsive
+				functionality that can be adapted to any screen size.
+			</p>
+			<div class="button2">
+				<b>SHOW MORE &nbsp; ></b>
+			</div>
+		</div>
+		<ul class="bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+ 
+	<div class="eleven">
+		<h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+		<hr>
+		<i class="fa fa-cc-discover" style="font-size:55px;color:#777777;position: relative;bottom: -10px;margin-left: -70px;"></i>
+		<input type="text" id="Email" placeholder="Enter your Email" required oninvalid="this.setCustomValidity('Vui lòng điền vào ô.')" />
+		<div class="button4" onclick="check()">
+			<b>Subscribe Now</b>
+		</div>
+	</div>
+	<div class="twelve">
+		<div class="slideshow">
+			<img src="1.png">
+			<img src="2.png">
+			<img src="3.png">
+			<img src="4.png">
+			<img src="5.png">
+			<img src="6.png">
+			<img src="7.png">
+			<img src="8.png">
+			<img src="9.png">
+		</div>
+	</div>
+	<div class="thirdteen">
+		<h2>ABOUT <span style="color: #31C3A6">WE</span></h2>
+		<hr>
+		<img src="950eab8cdd833fdd6692.jpg" style="border-radius: 80%;" width="150px" height="150px">
+		<h3></h3>
+		<p>25-2-2019</p>
+		<p>From : SE1321</p>
+		<p>Studing : FPT University</p>
+		<div style="padding-left: 5px;margin-left:610px;">
+			<div class="icon" id="i1">
+				<i class="fa fa-facebook" style="font-size: 25px"></i><br><br>
+				<i class="fa fa-facebook" style="font-size: 25px;color:white"></i>
+			</div>
+			<div class="icon" id="i2">
+				<i class=" fa fa-google" style="font-size: 25px"></i><br><br>
+				<i class=" fa fa-google" style="font-size: 25px;color:white"></i>
+			</div>
+			<div class="icon" id="i3">
+				<i class="fa fa-skype" style="font-size: 25px"></i><br><br>
+				<i class="fa fa-skype" style="font-size: 25px;color:white"></i>
+			</div>
+			<div class="icon" id="i4">
+				<i class="fa fa-vimeo" style="font-size: 25px"></i><br><br>
+				<i class="fa fa-vimeo" style="font-size: 25px;color:white"></i>
+			</div>
+			<div class="icon" id="i5">
+				<i class=" fa fa-twitter" style="font-size: 25px"></i><br><br>
+				<i class=" fa fa-twitter" style="font-size: 25px;color:white"></i>
+			</div>
+			<div class="icon" id="i6">
+				<i class=" fa fa-git" style="font-size: 25px"></i><br><br>
+				<i class=" fa fa-git" style="font-size: 25px;color:white"></i>
+			</div>
+		</div>
+		<div style="width:100%;height:150px;">
+		</div>
+	</div>
+</body>
+
+</html>

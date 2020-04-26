@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+            .sidenav a {
+                padding: 6px 8px 6px 16px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+            }
+
+                .sidenav a:hover {
+                    color: #f1f1f1;
+                }
+
+        .main {
+            margin-left: 160px; /* Same as the width of the sidenav */
+            font-size: 28px; /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+                .sidenav a {
+                    font-size: 18px;
+                }
+        }
+        #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+    </style>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div class="sidenav">
+        <a href="Headphone.html">Home</a>
+        <a href="Trademark.html">Trademark</a>
+        <a href="Sale.html">Sale</a>
+        <a href="signin.html">Your cart</a>
+    </div>
+
+    <div class="main">
+        <h2 >HEADPHONE REVIEWS</h2>
+        <p><span style="font-size:45px; color:#ff0000">A</span>fter the smartphone, headphones are the gadget we reach for most often in our daily lives. Here, The Verge tracks the best headphones for every budget and purpose, whether they be wireless, noise cancelling, in-ear, or over-ear. With all the big brands — from Bose and Beats to Sony and Sennheiser — and a few of the over-performing smaller ones, there's a perfect pair of headphones out there for everyone, and we'll have it covered.</p>
+        <p>For anyone who grew up with Microsoft as the stodgy PC monopoly that wouldn’t know “cool” if it was out on a wintry walk in northern Sweden, the past few years have required something of an adjustment. It’s no exaggeration to say that Microsoft is today one of the most bold and exciting hardware design companies in the tech world. The Surface Pro has defined its own category of versatile hybrid device, the Surface Studio rivals Apple’s iMacs for sheer desirability, and the Surface Laptop would be amazing if it had a more sensible set of ports.</p>
+        <img src="tải xuống12.jpg" width="250" height="250" style="margin-left:500px;" />
+        
+        <p>Into this context of design leadership comes Microsoft’s first pair of headphones from the Surface team, simply titled Surface Headphones. They are gray, as you might expect from the old Microsoft. But they’re also permeated with all the neat little design touches that distinguish the new Microsoft. Before I even laid my hands on a pair, I wanted them.</p>
+        <p>Among other things, the Surface Headphones can be said to be the first headphones designed specifically as a carrier for a digital voice assistant. Microsoft really wants you to use Cortana with these, though they’re equally comfortable conversing with Google’s Assistant or Apple’s Siri. The Surface Headphones are also engineered for modern lifestyles, which means they include noise canceling (NC), deft switching between multiple paired devices, and, of course, USB-C..</p>
+        <img src="tải xuốngaa.jpg" width="250" height="250" style="margin-left:500px;" />
+
+        <p>Priced at $350, the wireless Surface Headphones are squaring off against Apple’s enduringly popular Beats Studio 3 and Sony’s superb 1000X M3s. That means they need to have something special to make them stand out, and they do.</p>
+        <p>The thing that’s impressed me the most about the Surface Headphones is something you won’t see and might not even notice for days. Their wireless performance is exceptional. The Surface cans keep a stable connection to the iMac at my living room desk no matter where I am in my apartment, whereas literally every other pair of wireless headphones would suffer interference from all the metal appliances in the kitchen. With the Surface Headphones, I can do the dishes while listening to a YouTube video that’s playing on my desktop on the other side of the apartment.</p>
+        <img src="61679ihvfzL._SY355_.jpg"  width="250" height="250" style="margin-left:500px;" />
+        <p>Microsoft isn’t offering any advanced wireless protocols here — the Surface Headphones don’t even have AptX or AAC, and they support Bluetooth 4.2 rather than the latest version 5 — however, the reliability and range of its connection are so good that they ameliorate those omissions. Pairing the Surface cans to any device is utterly painless: I got them up and running on a Windows laptop, an Android phone, and a couple of Macs with ease. Plus, Microsoft’s handoff from one sound source to another is seamless and automatic. I can listen to music on my PC, interrupt that to take a call on my phone, and then return to the PC, all without having to mess with settings or disconnect and reconnect.</p>
+        
+    </div>
+    <script>
+// cuộn đến 20px hiển thị nút
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("myBtn").style.display = "block";
+  } else {
+    document.getElementById("myBtn").style.display = "none";
+  }
+}
+
+// nhấp vào nút hiện lên trên cùng
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+    </script>
+
+</body>
+</html>
